@@ -36,6 +36,12 @@
     --shadow: -12px -12px 24px rgba(240, 240, 240, 0.6), 12px 12px 24px rgba(240, 240, 240, 0.6);
     --nav-shadow: 0px 10px 32px rgba(240, 240, 240, 0.6);
     --box-shadow-1: -10px -10px 32px rgba(240, 240, 240, 0.6), 10px 10px 32px rgba(240, 240, 240, 0.6);
+
+
+    /* ! MAJOR PADDING */
+    --padding-desktop: calc(0.069 * 100vw);
+    --padding-tablet: calc(0.0625 * 100vw);
+    --padding-mobile: calc(0.058 * 100vw);
 }
 
 
@@ -44,7 +50,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Lato, monospace;
+    font-family: Lato, sans-serif;
 }
 
 
@@ -65,7 +71,7 @@ h4 {
 h5,
 h6,
 b {
-    font-weight: 600;
+    font-weight:500;
 }
 
 small,
@@ -86,7 +92,7 @@ small.extra-small {
 
 p,
 b {
-    font-size: 16px;
+    font-size: 1em;
 }
 
 
@@ -122,7 +128,7 @@ h5 {
 }
 
 h6 {
-    font-size: 20px;
+    font-size: 1.4em;
     line-height: 37px;
 }
 
