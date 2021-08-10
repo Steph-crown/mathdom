@@ -8,7 +8,10 @@ import { Header } from "../components/header/header";
 export default function Home() {
     return (
     <div>
-<Header curr="Home" />
+        <Head>
+            <title>Mathdom | Home</title>
+        </Head>
+        <Header curr="Home" />
 
     </div>
     );

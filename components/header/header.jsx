@@ -1,37 +1,8 @@
 import Link from "next/link";
 import Image from "next/image";
-// import { HeaderContainer } from "./style";
-
-import styled from 'styled-components';
-import { BREAKPOINTS } from '../../const';
-
-
-
-const HeaderContainer = styled.header`
-    padding: 16px var(--padding-desktop);
-    margin: 0;
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    min-height: 2px;
-    align-items: center;
-
-    nav {
-        display: flex;
-        justify-content: center;
-        min-height: 2px;
-        align-items: center;
-
-        @media (max-width: ${BREAKPOINTS.tablet}) {
-            display: none;
-            margin: 0;
-        }
-    }
-    nav>* {
-        margin: 0 1em;
-    }
-
-`
+import { HeaderContainer, LinkH6 } from "./style";
+import { SolidButton, TransparentButton } from "../buttons/buttons";
+import { Hamburger } from "../hamburger/hamburger";
 
 export const Header = ({ curr }) => {
     let links = [
@@ -44,10 +15,9 @@ export const Header = ({ curr }) => {
 
     links = links.map(({ name, path }) => (
         <Link href={path} key={name} passHref={true}>
-            <h6>{name}</h6>
+            <LinkH6 curr={curr === name}>{name}</LinkH6>
         </Link>
     ));
-
 
     return (
         <HeaderContainer>
@@ -57,9 +27,16 @@ export const Header = ({ curr }) => {
                 width="140"
                 height="40"
             />
-            
             <nav>{links}</nav>
+            <div className="auth">
+                <TransparentButton>sign up</TransparentButton>
 
+                <SolidButton width="100px">Login</SolidButton>
+            </div>
+
+            <div className="hamburger">
+                <Hamburger />
+            </div>
         </HeaderContainer>
     );
 };
