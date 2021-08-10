@@ -18,6 +18,7 @@ export const SolidContainer = styled(TransparentContainer)`
     background: var(--error);
     color: var(--starkwhite);
     min-width: ${props => props.width};
+    font-weight: 700;
 
     &:hover {
         color: var(--starkwhite);

@@ -9,3 +9,4 @@ export const BREAKPOINTS_NUM = {
     tablet: 1024,
     mobile: 414
 }
+
