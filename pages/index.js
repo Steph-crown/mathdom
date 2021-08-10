@@ -4,6 +4,7 @@ import styles from "../styles/Home.module.css";
 import Link from "next/link";
 import { Header } from "../components/header/header";
 import { Banner } from "../components/banner/banner";
+import { ReviewSection } from "../components/reviews/reviews";
 
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
         </Head>
         <Header curr="Home" />
         <Banner />
+        <ReviewSection />
     </div>
     );
 }
