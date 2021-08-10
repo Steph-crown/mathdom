@@ -2,14 +2,14 @@ import { SolidButton, TransparentButton } from "../buttons/buttons";
 import { BannerContainer } from "./style";
 import Image from "next/image"
 
+import BannerImage from "./../../public/banner-image.svg"
+
 
 // let innerWidth = window.innerWidth
 
 export const Banner = () => {
-
-    if (process.browser) {
-        let innerWidth = window.innerWidth
-}
+    let innerWidth = 0
+    
     return (
         <BannerContainer>
             <div>
@@ -26,12 +26,12 @@ export const Banner = () => {
             <div>
                 {/* {console.log(window)} */}
                 <Image
-                    src="/banner-image.svg"
-                    height={357}
-                    width={(574 / 1152) * innerWidth }
+                    src={BannerImage}
+                    
                     alt="Banner Image"
-                    unoptimized={true}
                 />
+
+
             </div>
         </BannerContainer>
     );

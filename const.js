@@ -1,7 +1,8 @@
 export const BREAKPOINTS = {
     desktop: "1152px",
     tablet: "1024px",
-    mobile: "414px"
+    mobile: "414px",
+    postMobile: "800px"
 }
 
 export const BREAKPOINTS_NUM = {

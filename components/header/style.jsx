@@ -30,6 +30,10 @@ export const HeaderContainer = styled.header`
         display: none;
     }
 
+    div.auth {
+        display: flex;
+    }
+
     @media (max-width: ${BREAKPOINTS.tablet}) {
         div.auth {
             display: none;

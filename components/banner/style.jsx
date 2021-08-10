@@ -18,7 +18,7 @@ export const BannerContainer = styled.div`
     }
     
     &>div {
-        width: 45%;
+        width: 48%;
     }
 
     .button-flex {
@@ -28,6 +28,19 @@ export const BannerContainer = styled.div`
     @media (max-width: ${BREAKPOINTS.tablet}) {
         padding: var(--padding-tablet);
     }
+
+    @media (max-width: ${BREAKPOINTS.postMobile}) {
+        flex-direction: column;
+        &>div {
+            width: 100%;
+        }
+
+        &>div:nth-child(2) {
+            width: 80%;
+            margin-top: 3em;
+        }
+    }
+    
 
     @media (max-width: ${BREAKPOINTS.mobile}) {
         padding: var(--padding-mobile);
