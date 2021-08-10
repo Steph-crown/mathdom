@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { BREAKPOINTS } from "../../const";
 
 export const BannerContainer = styled.div`
-    padding: var(--padding-desktop);
+    padding: 3em var(--padding-desktop);
     display: flex;
     justify-content: space-between;
     min-height: 2px;
@@ -26,7 +26,7 @@ export const BannerContainer = styled.div`
     }
 
     @media (max-width: ${BREAKPOINTS.tablet}) {
-        padding: var(--padding-tablet);
+        padding: 3em var(--padding-tablet);
     }
 
     @media (max-width: ${BREAKPOINTS.postMobile}) {
@@ -43,6 +43,6 @@ export const BannerContainer = styled.div`
     
 
     @media (max-width: ${BREAKPOINTS.mobile}) {
-        padding: var(--padding-mobile);
+        padding: 2em var(--padding-mobile);
     }
 `
