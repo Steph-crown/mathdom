@@ -94,6 +94,9 @@ b {
     font-size: 1em;
 }
 
+button {
+    line-height: 16px;
+}
 
 
 
@@ -232,7 +235,7 @@ h5.bold {
 
     button {
         font-size: 10px;
-        line-height: 16px;
+        line-height: 0px;
         letter-spacing: 0.24em;
     }
 
@@ -312,7 +315,7 @@ h5.bold {
 
     button {
         font-size: 10px;
-        line-height: 16px;
+        line-height: 0px;
         letter-spacing: 0.24em;
     }
 
@@ -331,4 +334,12 @@ h5.bold {
         font-size: 14px;
         line-height: 20px;
     }
+}
+
+
+
+div.cta {
+    display: flex;
+    width: 100%;
+    justify-content: center;
 }

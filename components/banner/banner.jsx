@@ -27,12 +27,12 @@ export const Banner = () => {
                 {/* {console.log(window)} */}
                 <Image
                     src={BannerImage}
-                    
                     alt="Banner Image"
                 />
 
 
             </div>
+            
         </BannerContainer>
     );
 };

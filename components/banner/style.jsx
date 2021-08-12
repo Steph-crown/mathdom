@@ -4,7 +4,7 @@ import { BREAKPOINTS } from "../../const";
 export const BannerContainer = styled.div`
     padding: 3em var(--padding-desktop);
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; 
     min-height: 2px;
     align-items: center;
     width: 100%;

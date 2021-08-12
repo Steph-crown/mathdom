@@ -5,5 +5,5 @@ export const CarouselContainer = styled.div`
     justify-content: center;
     width: 100%;
     flex-wrap: wrap;
-    overflow-x: scroll;
+    /* overflow-x: scroll; */
 `

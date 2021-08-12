@@ -2,10 +2,10 @@ import styled from "styled-components"
 
 export const TransparentContainer = styled.button`
     background: transparent;
-    color: var(--error);
+    color:  ${props => props.textColor || "var(--error)"};
     outline: none;
     border: none;
-    padding: 16px 32px;
+    padding: 24px 32px;
     border-radius: 12px;
 
     &:hover {
@@ -15,13 +15,18 @@ export const TransparentContainer = styled.button`
 
 
 export const SolidContainer = styled(TransparentContainer)`
-    background: var(--error);
-    color: var(--starkwhite);
+    background: ${props => props.color || "var(--error)"};
+    ${props => console.log(props)}
+    color:  ${props => props.textColor || "var(--starkwhite)"};
     min-width: ${props => props.width};
     font-weight: 700;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 2px;
 
     &:hover {
         color: var(--starkwhite);
-        background: var(--error-75);
+        background: ${props => props.textColor || "var(--error)"};
     }
 `

@@ -6,6 +6,6 @@ export const TransparentButton = ({ children }) => {
 };
 
 // Solid Button, variable width
-export const SolidButton = ({children, width}) => {
-    return <SolidContainer width={width}>{children}</SolidContainer>
+export const SolidButton = ({children, width, color, textColor}) => {
+    return <SolidContainer color={color} width={width} textColor={textColor} >{children}</SolidContainer>
 }

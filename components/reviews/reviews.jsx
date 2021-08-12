@@ -1,4 +1,6 @@
+import { SolidButton } from "../buttons/buttons";
 import { Carousel } from "../carousel/carousel";
+import { Icon } from "../icons/style";
 import { ReviewContainer, ReviewSectionContainer } from "./style";
 
 const colors = ["var(--error)", "var(--primary)", "var(--success)", "var(--warning)"]
@@ -19,11 +21,11 @@ let reviews = [
         color: 2,
          review: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ipsum faucibus in nunc. Sed cras mauris felis aliquet quis. Sed consectetur aliquet mauris sed dna, m mauris sed dna, mmndmx.  Sed consectetur aliquet "
      },
-     {
-        name: "Ada",
-        color: 3,
-         review: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ipsum faucibus in nunc. Sed cras mauris felis aliquet quis. Sed consectetur aliquet mauris sed dna, m mauris sed dna, mmndmx.  Sed consectetur aliquet "
-     },
+    //  {
+    //     name: "Ada",
+    //     color: 3,
+    //      review: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ipsum faucibus in nunc. Sed cras mauris felis aliquet quis. Sed consectetur aliquet mauris sed dna, m mauris sed dna, mmndmx.  Sed consectetur aliquet "
+    //  },
 ];
 
 
@@ -55,6 +57,12 @@ export const ReviewSection = () => {
                 <Carousel>
                 {reviews}
             </Carousel>
+            </div>
+            <div className="cta">
+                <SolidButton color="var(--white)" textColor="var(--error)">
+                    Get Started 
+                    <Icon className="fas fa-caret-right" size="2em" margin="0 0 0 0.6em" />
+                </SolidButton>
             </div>
         </ReviewSectionContainer>
     );
