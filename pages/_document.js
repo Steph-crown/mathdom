@@ -78,7 +78,6 @@ export default class MyDocument extends Document {
             <Head>
                 <link rel="icon" href="/Main Logo.svg" />
                 <meta name="theme-color" content="#F53A3A" />
-                <script src="https://kit.fontawesome.com/8ddeed34df.js" crossorigin="anonymous"></script>
                 <link
                     rel="preconnect"
                     href="https://fonts.googleapis.com"
